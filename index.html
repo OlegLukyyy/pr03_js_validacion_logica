@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 3 - Validación lógica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Formulario</h1>
+
+      <form id="formulario" novalidate>
+        <label
+          >Nombre
+          <input id="nombre" type="text" />
+        </label>
+
+        <label
+          >Apellidos
+          <input id="apellidos" type="text" />
+        </label>
+
+        <label
+          >Email
+          <input id="email" type="email" />
+        </label>
+
+        <label
+          >Contraseña
+          <input id="password" type="password" />
+        </label>
+
+        <label
+          >Repetir contraseña
+          <input id="password2" type="password" />
+        </label>
+
+        <label
+          >Edad
+          <input id="edad" type="number" />
+        </label>
+
+        <label class="check">
+          <input id="condiciones" type="checkbox" />
+          Acepto las condiciones
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section id="mensajes" class="mensajes" aria-live="polite"></section>
+    </main>
+  </body>
+</html>
