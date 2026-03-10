@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(19, 19, 19, 0.959);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 20px;
+}
+
+/*--- meses ---*/
+ul {
+  list-style: none;
+}
+.months {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/*sin notas */
+.months li {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+
+  /* mostrar puntero al pasar por encima*/
+  cursor: pointer;
+}
+
+/* contador de notas */
+.note-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: rgb(9, 255, 0);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-count:empty {
+  display: none;
+}
+.months li:hover {
+  background-color: #bdff86;
+}

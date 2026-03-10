@@ -1,56 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Práctica 3 - Validación lógica</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/app_index.js" defer></script>
   </head>
   <body>
-    <main class="card">
-      <h1>Formulario</h1>
-
-      <form id="formulario" novalidate>
-        <label
-          >Nombre
-          <input id="nombre" type="text" />
-        </label>
-
-        <label
-          >Apellidos
-          <input id="apellidos" type="text" />
-        </label>
-
-        <label
-          >Email
-          <input id="email" type="email" />
-        </label>
-
-        <label
-          >Contraseña
-          <input id="password" type="password" />
-        </label>
-
-        <label
-          >Repetir contraseña
-          <input id="password2" type="password" />
-        </label>
-
-        <label
-          >Edad
-          <input id="edad" type="number" />
-        </label>
-
-        <label class="check">
-          <input id="condiciones" type="checkbox" />
-          Acepto las condiciones
-        </label>
-
-        <button type="submit">Enviar</button>
-      </form>
-
-      <section id="mensajes" class="mensajes" aria-live="polite"></section>
+    <main class="calendar">
+      <div class="container">
+        <ul class="months">
+          <li data-month="jan">
+            JAN
+            <span class="note-count"></span>
+          </li>
+          <li class="has-note" data-month="feb">
+            FEB
+            <span class="note-count">1</span>
+          </li>
+          <li data-month="mar">
+            MAR
+            <span class="note-count"></span>
+          </li>
+          <li data-month="apr">
+            APR
+            <span class="note-count"></span>
+          </li>
+          <li data-month="may">
+            MAY
+            <span class="note-count"></span>
+          </li>
+          <li data-month="jun">
+            JUN
+            <span class="note-count"></span>
+          </li>
+          <li data-month="jul">
+            JUL
+            <span class="note-count"></span>
+          </li>
+          <li data-month="aug">
+            AUG
+            <span class="note-count"></span>
+          </li>
+          <li data-month="sep">
+            SEP
+            <span class="note-count"></span>
+          </li>
+          <li data-month="oct">
+            OCT
+            <span class="note-count"></span>
+          </li>
+          <li data-month="nov">
+            NOV
+            <span class="note-count"></span>
+          </li>
+          <li data-month="dec">
+            DEC
+            <span class="note-count"></span>
+          </li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>
